@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="TinkingInJava">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../ThinkingInJava第4版专用Jar包/TinkingInJava.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../ThinkingInJava第4版专用Jar包/typeinfo-pets.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,31 @@
+泛型：
+
+1.与直接使用Object作为参数对象相比，泛型能够保证类是统一的，而Object的话则不能保证这一点；
+2.泛型的核心概念是：告诉编译器想使用什么类型，然后它来帮助处理一切细节。
+
+整个effective Java特别强调的一点是，把问题的暴露提前，真正的泛型如C++，这种静态语言会在编译器就把泛型相关的细节处理好，而不会把问题拖到运行时，但Java由于擦除的存在，导致出现了一些问题是在编译器无法识别的，但是会在运行时暴露出来的，这种就是语言层面的天然劣势了。
+但擦除的存在，保证了泛型和没有泛型代码之间的互相调用是完全兼容的。
+effective Java中提到SuppressWarning这个注解，能不用就别用，而是尽量去解决每一条编译警告，实在不行非要用，那也要尽可能的降低它的作用范围，能写到局部变量上的，就不加在方法上；
+
+
+effective Java：
+《第27条》 优先考虑泛型方法：
+静态工具方法尤其适合于泛型化：
+
+
+
+枚举：
+每个枚举类都相当于是Enum这个类的派生类；
+effective Java：
+《第30条》用enum代替int常量或者String常量枚举模式：
+好处：1.枚举类提供了更多的便利方法，如打印，遍历，获得长度，获得顺序等；
+
+2.可以避免类型安全问题，例如
+public static final int APPLE_FUJI=0;
+public static final int APPLE_FUJI2=1;
+public static final int ORANGE_BLOOD=0;
+public static final int ORANGE_BLOOD2=1;
+这种情况下，把APPLE当做ORANGE传递到某个方法中，编译器也不会有任何警告，甚至还会有APPLE==ORANGE这种对比为true的情况。
+而如果使用枚举（APPlE和ORANGE各自一个枚举）则可以完全避免这种类型安全问题。
+
+3.避免了初级用户的硬编码；

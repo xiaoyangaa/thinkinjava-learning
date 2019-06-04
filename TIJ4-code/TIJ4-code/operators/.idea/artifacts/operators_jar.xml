@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="operators:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/operators_jar</output-path>
+    <root id="archive" name="operators.jar">
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../ThinkingInJava第4版专用Jar包/TinkingInJava.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../ThinkingInJava第4版专用Jar包/typeinfo-pets.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
